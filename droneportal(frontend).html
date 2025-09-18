@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive unit</title>
+    <style>
+        body{
+            background-image: url(drone.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            font-family: 'Courier New', Courier, monospace';
+        }
+        form{
+            text-align: center;
+            font-size: 20px;
+        }
+        .percent{width: 100%;background-image: url(drone.jpg);padding: 10px;text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bolder;font-size: 32px;
+    
+        }
+        .em{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+        }
+        .em span{font-size: 2em; color: rgb(188, 87, 87);}
+        .rem{font-size: 1.5rem;color: rgb(49, 173, 47);}
+        h1{
+            font-size: 34px;
+            text-align: center;
+        }
+        h2{
+            font-size: 30px;
+            text-align: center;
+        }
+        h3{
+            font-size: 30px;
+            text-align: center;
+        }
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        nav{
+            background-color: rgb(99, 68, 45);
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+    
+
+        }
+        .nav-links{
+            list-style-type: none;
+            display: flex;
+            gap: 30px;
+        }
+        .nav-links li a {
+            text-decoration: none;
+            color: antiquewhite;
+            font-size: 1rem;
+            transition: color 0.3s;
+
+        }
+        .nav-links li a:hover{
+            color: darkgray;
+        }
+        .logo{
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+        #Menu-icon{
+            display: none;
+            font-size: 1.8rem;
+            cursor: pointer;
+            user-select: none;
+        }  
+    </style>
+</head>
+<body>
+    <h1> Dhanekula Institute of Engineering and Technology </h1>
+    <h2> Accredited by NAAC A Grade And NBA (CE ,ECE, CSE, ME, EEE)</h2>
+    <h3> Affiliated by JNTU Kakinada</h3>
+    <nav>
+        <div class="logo"> MENU </div>
+        
+        <label for="Menu" class="Menu"> ≡ </label>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Faculty</a></li>
+            <li><a href="#">Contact us</a></li>
+            
+    </nav>
+
+    
+       
+   
+    <h1> Registration Form </h1>
+    <form action="/submit" method="POST">
+       
+        <div style="text-align: center;">
+            <label for="usernme">UserName:</label>
+            <input type="text" id="username" name="username" required><br><br>
+         </div>
+         
+         <div style="text-align: center;">
+            <label for= "email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+         </div> 
+         
+         <div style="text-align: center;">
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required><br><br>
+        </div> 
+        
+        <div style="text-align: center;">
+            <label for="confirm-password">Confirm Password:</label>
+            <input type="confirm-password" id="confirm-password" name="confirm-password" required><br><br>
+        </div>
+        <input type="checkbox" id="Menu">
+        <button type="submit"> Register </button>
+
+    </form>   
+   
+
+</body>
+</html>
